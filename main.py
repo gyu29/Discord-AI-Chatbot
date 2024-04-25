@@ -42,4 +42,4 @@ if TOKEN is None:
     print("\033[33mNote: If you don't have a Discord token environment variable, you will have to input it every time. \033[0m")
     TOKEN = input("Please enter your Discord token: ")
 
-bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.G8Bpo-.bpgukHIt4q3rQGoxilC7D89z4zBo2Ga8rPHnD8')
+bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.Gq_DPM.I2XBkuncsiGIBU2cckr4Hcc4iLTG2OeEKhzX20')
