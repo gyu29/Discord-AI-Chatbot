@@ -32,4 +32,4 @@ class AIBot(commands.AutoShardedBot):
 
 bot = AIBot(command_prefix=[], intents=discord.Intents.all(), help_command=None)
 
-bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.GnKPc5.fvdt_IVxaUPubg5uaFE7LvqW9BZg5Qx5nBhZd4')
+bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.GLbP9V.sjX-hoYNWn5Ls7LdL2Ly0_kmZmXWqu_A23oMlc')
