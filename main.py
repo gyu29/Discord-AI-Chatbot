@@ -1,12 +1,8 @@
 import os
 from typing import Any
 from keep_alive import keep_alive
-
-keep_alive()
-
 import discord
 from discord.ext import commands
-
 from cogs import COMMANDS, EVENT_HANDLERS
 from bot_utilities.config_loader import config
 
@@ -29,6 +25,8 @@ class AIBot(commands.AutoShardedBot):
         print('If syncing commands is taking longer than usual you are being ratelimited')
         await self.tree.sync()
         discord.client._log.info(f"Loaded {len(self.commands)} commands")
+
+keep_alive()
 
 bot = AIBot(command_prefix=[], intents=discord.Intents.all(), help_command=None)
 
