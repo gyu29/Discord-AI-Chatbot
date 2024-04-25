@@ -6,12 +6,9 @@ keep_alive()
 
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 
 from cogs import COMMANDS, EVENT_HANDLERS
 from bot_utilities.config_loader import config
-
-load_dotenv('.env')
 
 class AIBot(commands.AutoShardedBot):
     def __init__(self, *args: Any, **kwargs: Any) -> None:
@@ -35,11 +32,4 @@ class AIBot(commands.AutoShardedBot):
 
 bot = AIBot(command_prefix=[], intents=discord.Intents.all(), help_command=None)
 
-TOKEN = os.getenv('DISCORD_TOKEN')
-
-if TOKEN is None:
-    print("\033[31mLooks like you haven't properly set up a Discord token environment variable in the `.env` file. (Secrets on replit)\033[0m")
-    print("\033[33mNote: If you don't have a Discord token environment variable, you will have to input it every time. \033[0m")
-    TOKEN = input("Please enter your Discord token: ")
-
-bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.GCfV7v.XCwY614cpaqtoVBTr6a9CWlsZ9sMEhDOk1VBRE')
+bot.run('MTIzMjU5ODYxNTU3OTY4ODk3MA.GnKPc5.fvdt_IVxaUPubg5uaFE7LvqW9BZg5Qx5nBhZd4')
